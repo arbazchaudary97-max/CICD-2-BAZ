@@ -20,5 +20,5 @@ jobs:
 
       - name: Run tests
         run: |
-          test -f README.md
+          test -f CICD/README.md
           test -f .github/workflows/ci.yaml
