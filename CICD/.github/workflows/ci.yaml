@@ -14,5 +14,7 @@ jobs:
         node-version: '14'
     - name: Install dependencies
       run:  echo "No dependencies to install" 
-    - name: Run tests 
-      run: echo "No Tests yet"
+    - name: Run tests
+      run: |
+      test -f README.md
+      test -f .github/workflows/ci.yaml
