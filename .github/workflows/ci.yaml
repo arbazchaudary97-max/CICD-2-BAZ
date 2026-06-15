@@ -19,4 +19,6 @@ jobs:
         run: echo "No dependencies to install"
 
       - name: Run tests
-        run: echo "No tests yet"
+        run: |
+          test -f README.md
+          test -f .github/workflows/ci.yaml
