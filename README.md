@@ -1,3 +1,37 @@
+## What I built
+   Task 1: CI Pipeline using GitHub Actions.
+   Task 2: CD Pipeline using GitHub Actions and Docker Hub.
+   Docker image automatically builds and pushes on every push to main.
+
+
+## Pipeline YAML files
+   .github/workflows/ci.yaml
+   .github/workflows/cd.yaml
+
+    ci.yaml – Runs automated checks on every push.
+    cd.yaml – Builds and pushes Docker images to Docker Hub.
+
+## Screenshots of Pipeline passing
+    cd.yaml:![alt text](image.png)
+    ci.yaml:![alt text](image-1.png)
+    Docker Hub : showing latest Tag: ![alt text](image-2.png)
+
+## What i Learnt
+   - How to create GitHub Actions workflows.
+   - How to trigger workflows on pushes to the main branch.
+   - How to use GitHub Secrets securely.
+   - How to build Docker images using a Dockerfile.
+   - How to push Docker images to Docker Hub.
+   - The difference between CI and CD pipelines.
+
+## Issues Solved
+
+  - Workflow file was initially stored in the wrong folder.
+  - YAML indentation errors caused GitHub Actions to fail.
+  - Docker build failed because the Dockerfile was empty.
+  - Docker Hub token had read-only permissions and could not push images.
+  - Fixed Docker Hub authentication by creating a token with write permissions.
+
 ## Task 1: Basic CI Pipeline
 
 For Task 1, I created a basic CI pipeline using GitHub Actions.
